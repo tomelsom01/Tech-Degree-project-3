@@ -8,14 +8,83 @@ h1{
 
     background: black;
     color: white;
-    padding: 10px ;
-    margin: 0;
+    padding: 10px 10px;
+    margin: 0 auto;
     width: 100%
+    
     
     
 }
 
 header{
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
+}
+
+header h2
+ {
+text-align: center;
+padding-top: 30px;
+width:85%;
+margin: 0 auto;
+
+}
+
+header p{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+    width: 85%;
+    border-bottom: 5px solid black ;
+   
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+/* Contact Information */
+
+fieldset{
+    border: none;
+    
+   
+}
+
+input[text]{
+    padding: 0 10px 20px;
+    margin: 0 auto;
+
+}
+
+label[for=comment]{
+
+    margin: 100px 0;
+}
+/* Footer */
+
+.copyright{
+ margin: 0 auto;
+ padding-left: 100px;
 }
