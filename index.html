@@ -10,92 +10,109 @@
     <title>Online Registreation Form</title>
 </head>
 <body>
-    <header>
-<h1>THE CODE REVIEW</h1>
+    <div class="wrap">
+        <header>
+    <h1 class="codeheader">THE CODE REVIEW</h1>
 
-<h2>Signup for our news letter</h2>
-<p>Get the latest news on how your code is doing in your inbox</p>
-    </header>
-    <hr>
+    <h2>Signup for our news letter</h2>
+    <p>Get the latest news on how your code is doing in your inbox</p>
+        </header>
+        
 
-    <form action="index.html" method="post">
-   
-        <fieldset>
-        <h2>
-            Contact Information
-        </h2>
+        <form action="index.html" method="post" class="clearfix">
+                <hr>
+            <fieldset class="wrap clearfix">
+            <h2>
+                Contact Information
+            </h2>
+            <section class="flex">
+                <div class="col">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" class="name"><br>
+                </div>
+                <div class="col">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="email@website.com"><br>
+                </div>
+               <div class="col">
+                    
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number"><br>
+                </div>    
+                    <div class="col">
+                    <label for="street-address">Street Address:</label>
+                    <input type="text" id="street-address" class="street"><br>
+                    </div>
+                    <div class="col">
+                    <label for="city">City:</label>
+                    <input type="text" id="city"><br>
+                            </div>
+                    <div class="col">
+                    <label for= "state"> State:</label>
+                    <select id="state" name="user-state" class="state"><br>
+                        <optgroup label="A">
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                    </optgroup>
+                    <optgroup label="C">
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="connecticut">Connecticut</option>
+                    </optgroup>
+                    <optgroup label="D">
+                        <option value="delaware">Delaware</option>
+                    </optgroup>
+                    <optgroup label="F">
+                        <option value="florida">Florida</option>
+                    </optgroup>
+                    <optgroup label="G">
+                        <option value="georgia">Georgia</option>
+                    </optgroup>
+                    <optgroup label="H">
+                        <option value="hawaii">Hawaii</option>
+                    </optgroup>
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name"><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="email@website.com"><br>
-                
-                
-                <label for="phone-number">Phone Number:</label>
-                <input type="number" id="phone-number"><br>
-                
-                
-                <label for="street-address">Street Address:</label>
-                <input type="text" id="street-address"><br>
-                
-                <label for="city">City:</label>
-                <input type="text" id="city"><br>
-                
-                <label for= "state"> State:</label>
-                <select id="state" name="user-state">
-                    <optgroup label="A">
-                    <option value="alabama">Alabama</option>
-                    <option value="alaska">Alaska</option>
-                    <option value="arizona">Arizona</option>
-                    <option value="arkansas">Arkansas</option>
-                </optgroup>
-                <optgroup label="C">
-                    <option value="california">California</option>
-                    <option value="colorado">Colorado</option>
-                    <option value="connecticut">Connecticut</option>
-                </optgroup>
-                <optgroup label="D">
-                    <option value="delaware">Delaware</option>
-                </optgroup>
-                <optgroup label="F">
-                    <option value="florida">Florida</option>
-                </optgroup>
-                <optgroup label="G">
-                    <option value="georgia">Georgia</option>
-                </optgroup>
-                <optgroup label="H">
-                    <option value="hawaii">Hawaii</option>
-                </optgroup>
-                <br>
-                
-                <label for="zip-code"> Zip Code:</label>
-                <input type="text" id="zip-code"><br>
-   
-        <hr>
-    </form>
-    <section>
-                <h2>News Letter</h2>
+                </div>
+                <div class="col">
 
-                <p>select the newsletter you would like to recieve</p>
+                    <label for="zip-code"> Post Code:</label>
+                    <input type="text" id="zip-code"><br>
+                    </div>
+                </section>
+                    
+    
+            <hr>
+        </form>
+        <form action="index.html" method="post">
+            <section class="newsletter flex">
+                <div class="align">
+                    <h2>NewsLetter</h2>
 
-                <input type="checkbox" id="html-news" name="news-letter"><label for="htmlnews">HTML News</label><br>
-                <input type="checkbox" id="css-news" name="news-letter"><label for="cssnews">CSS News</label><br>
-                <input type="checkbox" id="javascript-news" name="news-letter"><label for="javascriptnews">Javascript News</label><br>
+                    <p>Select the newsletter you would like to recieve</p>
 
-                <p>Newsletter Format</p>
-                <input type="radio" id="html" name="newsletter-format"><label for="html">Html</label><br>
-                <input type="radio" id="plain-text" name="newsletter-format"><label for="plaintext">Plain Text</label><br>
+                    <input type="checkbox" id="html-news" name="news-letter"><label for="htmlnews">HTML News</label><br>
+                    <input type="checkbox" id="css-news" name="news-letter"><label for="cssnews">CSS News</label><br>
+                    <input type="checkbox" id="javascript-news" name="news-letter"><label for="javascriptnews">Javascript News</label><br>
 
-                <label for="comment">Other text youd like to hear about</label>
-                <textarea id="comment" name="user_comment"> </textarea><br>
-        </fieldset>
+                    <p>Newsletter Format</p>
+                    <input type="radio" id="html" name="newsletter-format"><label for="html">Html</label><br>
+                    <input type="radio" id="plain-text" name="newsletter-format"><label for="plaintext">Plain Text</label><br>
+
+                    <label for="comment">Other text youd like to hear about</label>
+                    <textarea id="comment" name="user_comment"> </textarea><br>
+                </div>
+                </section>
+            </fieldset>
+        </div>       
 <input class="btn" type="submit" value="Sign up">
 
 <footer>
     <cite class="copyright">Copyright the code review</cite>
 </footer>
 
-    </section>
+</form>
+
 </body>
 </html>
