@@ -20,100 +20,103 @@
         
 <section class="form">
         <form action="index.html" method="post">
-                <hr>
-            <fieldset>
-            <h2>
-                Contact Information
-            </h2>
-            <section class="flex">
-                <div class="col">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" class="name"><br>
-                </div>
-                <div class="col">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" placeholder="email@website.com"><br>
-                </div>
-               <div class="col">
-                    
-                    <label for="phone-number">Phone Number:</label>
-                    <input type="tel" id="phone-number"><br>
-                </div>    
+        <hr>
+            
+            
+                
+                   <h2> Contact Information</h2>
+               <fieldset>    
+            
+                    <div class="flex">
+                        <div class="col">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" class="name"><br>
+                        </div>
+                        <div class="col">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" placeholder="email@website.com"><br>
+                        </div>
+                        <div class="col">
+                                            
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number"><br>
+                        </div>    
+                        <div class="col">
+                            <label for="street-address">Street Address:</label>
+                            <input type="text" id="street-address" class="street"><br>
+                        </div>
+                        <div class="col">
+                            <label for="city">City:</label>
+                            <input type="text" id="city"><br>
+                        </div>
+
+                </fieldset>
+                <fieldset>
                     <div class="col">
-                    <label for="street-address">Street Address:</label>
-                    <input type="text" id="street-address" class="street"><br>
-                    </div>
-                    <div class="col">
-                    <label for="city">City:</label>
-                    <input type="text" id="city"><br>
-                            </div>
-                    <div class="col">
-                    <label for= "state"> State:</label>
-                    <select id="state" name="user-state" class="state"><br>
+                        <label for= "state"> State:</label>
+                        <select id="state" name="user-state" class="state">
                         <optgroup label="A">
-                        <option value="alabama">Alabama</option>
-                        <option value="alaska">Alaska</option>
-                        <option value="arizona">Arizona</option>
-                        <option value="arkansas">Arkansas</option>
-                    </optgroup>
-                    <optgroup label="C">
-                        <option value="california">California</option>
-                        <option value="colorado">Colorado</option>
-                        <option value="connecticut">Connecticut</option>
-                    </optgroup>
-                    <optgroup label="D">
-                        <option value="delaware">Delaware</option>
-                    </optgroup>
-                    <optgroup label="F">
-                        <option value="florida">Florida</option>
-                    </optgroup>
-                    <optgroup label="G">
-                        <option value="georgia">Georgia</option>
-                    </optgroup>
-                    <optgroup label="H">
-                        <option value="hawaii">Hawaii</option>
-                    </optgroup>
-
-                </div>
-                <div class="col">
-
-                    <label for="zip-code"> Post Code:</label>
-                    <input type="text" id="zip-code"><br>
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="california">California</option>
+                            <option value="colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                        </optgroup>
+                        <optgroup label="D">
+                            <option value="delaware">Delaware</option>
+                        </optgroup>
+                        <optgroup label="F">
+                            <option value="florida">Florida</option>
+                        </optgroup>
+                        <optgroup label="G">
+                            <option value="georgia">Georgia</option>
+                        </optgroup>
+                        <optgroup label="H">
+                            <option value="hawaii">Hawaii</option>
+                        </optgroup>                                        
                     </div>
-                </section>
-            </section>                 
-    <section class="form-1">
-            <hr>
-        </form>
-        <form action="index.html" method="post">
-            <section class="newsletter flex">
-                <div class="align">
-                    <h2>NewsLetter</h2>
+                </fieldset>
+</section>                 
+                <section class="form-1">
+                        <hr>
+                        
+                 <section class="newsletter flex">
+                     
+                        <div class="align">
+                            <h2>NewsLetter</h2>
+                        <fieldset>
+                            <p>Select the newsletter you would like to recieve</p>
 
-                    <p>Select the newsletter you would like to recieve</p>
+                            <input type="checkbox" id="html-news" name="news-letter"><label for="html-news">HTML News</label><br>
+                            <input type="checkbox" id="css-news" name="news-letter"><label for="css-news">CSS News</label><br>
+                            <input type="checkbox" id="javascript-news" name="news-letter"><label for="javascript-news">Javascript News</label><br>
 
-                    <input type="checkbox" id="html-news" name="news-letter"><label for="htmlnews">HTML News</label><br>
-                    <input type="checkbox" id="css-news" name="news-letter"><label for="cssnews">CSS News</label><br>
-                    <input type="checkbox" id="javascript-news" name="news-letter"><label for="javascriptnews">Javascript News</label><br>
-
-                    <p>Newsletter Format</p>
-                    <input type="radio" id="html" name="newsletter-format"><label for="html">Html</label><br>
-                    <input type="radio" id="plain-text" name="newsletter-format"><label for="plaintext">Plain Text</label><br>
-<div class="splice">
-                    <label for="comment" class="comment">Other text youd like to hear about</label>
-                </div>
-                    <textarea id="comment" name="user_comment"> </textarea><br>
-                </div>
-                </section>
-            </fieldset>
-        </div>       
-<input class="btn" type="submit" value="Sign up">
-</section>
+                            <p>Newsletter Format</p>
+                            <input type="radio" id="html" name="newsletter-format"><label for="html">Html</label><br>
+                            <input type="radio" id="plain-text" name="newsletter-format"><label for="plain-text">Plain Text</label><br>
+                    </fieldset>        
+                    <fieldset>        
+                            <div class="splice">
+                            <label for="comment" class="comment">Other text youd like to hear about</label>
+                            </div>
+                            <textarea id="comment" name="user_comment"> </textarea><br>
+                        </div>
+                        </section>
+                    </fieldset>
+        
+            </div> 
+              
+    <input class="btn" type="submit" value="Sign up">
+    </section>
+</form>
 <footer class="copyright">
     <cite>Copyright the code review</cite>
 </footer>
 
-</form>
 
 </body>
 </html>
