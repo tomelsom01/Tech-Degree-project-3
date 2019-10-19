@@ -114,11 +114,7 @@ footer{
   }
 
 @media(min-width: 768px){
-    .wrap{
-        min-height: calc(100vh-60px);
-
-    }
-    .copyright,
+     .copyright,
     .codeheader{
         margin: 0 auto;
         width: 90%;
