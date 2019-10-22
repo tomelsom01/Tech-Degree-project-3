@@ -15,84 +15,88 @@
 
     <header>
         <h1 class="codeheader">&lt;THE CODE REVIEW&gt;</h1>
-
-        <h2>Signup for our news letter</h2>
-        <p>Get the latest news on how your code is doing in your inbox</p>
     </header>
-    <form action="index.html" method="post">
-        <section class="form">
+    <div class="wrap">
+    <section class="form">
+            <h2>Signup for our news letter</h2>
+            <p>Get the latest news on how your code is doing in your inbox</p>
+        
+        
+        <form action="index.html" method="post">
+            
 
-            <hr>
+                <hr class="topline">
 
 
 
-            <h2> Contact Information</h2>
-            <fieldset>
+                <h2> Contact Information</h2>
+                <fieldset>
 
-                <div class="flex">
-                    <div class="col">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" class="name" placeholder="required"><br>
+                    <div class="flex">
+                        <div class="col">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" class="name" placeholder="required"><br>
+                        </div>
+                        <div class="col">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" placeholder="required"><br>
+                        </div>
+                        <div class="col">
+
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="tel" id="phone-number"><br>
+                        </div>
+                        <div class="col">
+                            <label for="street-address">Street Address:</label>
+                            <input type="text" id="street-address" class="street"><br>
+                        </div>
+                        <div class="col">
+                            <label for="city">City:</label>
+                            <input type="text" id="city"><br>
+                        </div>
                     </div>
-                    <div class="col">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" placeholder="required"><br>
-                    </div>
+                </fieldset>
+                <fieldset>
                     <div class="col">
 
-                        <label for="phone-number">Phone Number:</label>
-                        <input type="tel" id="phone-number"><br>
+                        <label for="state"> State:</label>
+                        <select id="state" name="user-state" class="state">
+                            <optgroup label="A">
+                                <option value="alabama">Alabama</option>
+                                <option value="alaska">Alaska</option>
+                                <option value="arizona">Arizona</option>
+                                <option value="arkansas">Arkansas</option>
+                            </optgroup>
+                            <optgroup label="C">
+                                <option value="california">California</option>
+                                <option value="colorado">Colorado</option>
+                                <option value="connecticut">Connecticut</option>
+                            </optgroup>
+                            <optgroup label="D">
+                                <option value="delaware">Delaware</option>
+                            </optgroup>
+                            <optgroup label="F">
+                                <option value="florida">Florida</option>
+                            </optgroup>
+                            <optgroup label="G">
+                                <option value="georgia">Georgia</option>
+                            </optgroup>
+                            <optgroup label="H">
+                                <option value="hawaii">Hawaii</option>
+                            </optgroup>
+                        </select>
                     </div>
+
                     <div class="col">
-                        <label for="street-address">Street Address:</label>
-                        <input type="text" id="street-address" class="street"><br>
+                        <label for="zip-code">Post Code:</label>
+                        <input type="text" id="zip-code">
                     </div>
-                    <div class="col">
-                        <label for="city">City:</label>
-                        <input type="text" id="city"><br>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <div class="col">
 
-                    <label for="state"> State:</label>
-                    <select id="state" name="user-state" class="state">
-                        <optgroup label="A">
-                            <option value="alabama">Alabama</option>
-                            <option value="alaska">Alaska</option>
-                            <option value="arizona">Arizona</option>
-                            <option value="arkansas">Arkansas</option>
-                        </optgroup>
-                        <optgroup label="C">
-                            <option value="california">California</option>
-                            <option value="colorado">Colorado</option>
-                            <option value="connecticut">Connecticut</option>
-                        </optgroup>
-                        <optgroup label="D">
-                            <option value="delaware">Delaware</option>
-                        </optgroup>
-                        <optgroup label="F">
-                            <option value="florida">Florida</option>
-                        </optgroup>
-                        <optgroup label="G">
-                            <option value="georgia">Georgia</option>
-                        </optgroup>
-                        <optgroup label="H">
-                            <option value="hawaii">Hawaii</option>
-                        </optgroup>
-                    </select>
-                </div>
+                </fieldset>
+                <hr class="bottomline">
+            </section>
 
-                <div class="col">
-                    <label for="zip-code">Post Code:</label>
-                    <input type="text" id="zip-code">
-                </div>
-
-            </fieldset>
-        </section>
-
-        <hr>
+       
         <div class="form-1">
             <section class="newsletter flex">
 
@@ -128,6 +132,7 @@
         <input class="btn" type="submit" value="Sign up">
 
     </form>
+    </div>
     <footer class="copyright">
         <cite>Copyright the code review</cite>
     </footer>

@@ -2,6 +2,13 @@
 box-sizing: border-box;
 }
 
+body{
+    
+        background: linear-gradient(rgb(80, 161, 26), rgb(176, 212, 14), rgb(29, 158, 233));
+     
+
+}
+
 /* Header */
 
 .codeheader{
@@ -19,7 +26,25 @@ box-sizing: border-box;
 
 header{
     width: 100%;
+    border-radius: 10%;
+   
     
+}
+.topline{
+    height: 10px;
+    margin: 20px auto;
+    border-top: 4px solid #2457c4;
+    border-bottom: 2px solid #2457c4;
+    border-left: 0;
+    border-right: 0;
+    
+}
+.bottomline{
+    height: 10px;
+    margin: 20px auto;
+    border: 2px solid #2457c4;
+    border-left: 0;
+    border-right: 0;
 }
 
 header h2
@@ -31,14 +56,20 @@ margin: 0 auto;
 
 }
 
+button:hover {
+background-color: turquoise;
+cursor: pointer;
+}
+
+button:active{
+    background-color: gold;
+}
+
 header p{
     text-align: center;
     margin: 0 auto;
     padding: 10px 0 30px;
-    width: 85%;
-    border-bottom: 5px solid black ;
-    
-   
+    width: 85%;   
 }
 
 input[type="text"],
@@ -57,14 +88,46 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 50px;
+  border-radius: 5%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select[id="state"]:focus,
+textarea:focus,
+select:focus{
+background-color: indianred;
+
 }
 /* Contact Information */
+
+.wrap{
+    background-color: #a39d9d;
+    width: 70%;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
 
 fieldset{
     border: none;
     
    
 }
+
+label {
+    font-size: 1.2em;
+    padding-right: 20px;
+    width: 25%;
+  }
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: #244fc4;
+  }
 
 input[type="checkbox"],
 input[type="radio"]
@@ -91,6 +154,11 @@ input[type="submit"]{
     font-size: 16px;
     padding: 15px;
     
+}
+
+#zip-code{
+    display: block;
+    width: 50%;
 }
 /* Footer */
 
@@ -157,6 +225,8 @@ input[type="tel"]{
     justify-content: flex-end;
     margin-left: auto;
     max-width: 600px;
+    align-items: center;
+    width: 60%;
 }
 input[type="submit"]{
  width:60%;
