@@ -5,7 +5,7 @@ box-sizing: border-box;
 body{
     
         background: linear-gradient(rgb(80, 161, 26), rgb(176, 212, 14), rgb(29, 158, 233));
-     
+     font-family: 'Noto Sans', sans-serif; 
 
 }
 
@@ -42,7 +42,7 @@ header{
 .bottomline{
     height: 10px;
     margin: 20px auto;
-    border: 2px solid #2457c4;
+    border-bottom: 1px solid #2457c4;
     border-left: 0;
     border-right: 0;
 }
@@ -56,20 +56,23 @@ margin: 0 auto;
 
 }
 
-button:hover {
-background-color: turquoise;
-cursor: pointer;
-}
-
-button:active{
-    background-color: gold;
-}
 
 header p{
     text-align: center;
     margin: 0 auto;
     padding: 10px 0 30px;
     width: 85%;   
+}
+.number{
+
+    display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  height: 25px;
+  width: 25px;
+  background-color: #1fe96c;
+  border-radius: 100%;
+  margin-right: 5px;
 }
 
 input[type="text"],
@@ -118,9 +121,10 @@ fieldset{
 }
 
 label {
-    font-size: 1.2em;
+    font-size: 1.0em;
     padding-right: 20px;
     width: 25%;
+    
   }
 
 ::placeholder {
@@ -140,8 +144,6 @@ input[type="radio"]
     padding-top: 10px;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    
-
 }
 
 input[type="submit"]{
@@ -156,9 +158,11 @@ input[type="submit"]{
     
 }
 
+
 #zip-code{
+    margin-right: 50%; 
     display: block;
-    width: 50%;
+    
 }
 /* Footer */
 
@@ -174,13 +178,6 @@ footer{
     margin: 10px 0 50px;  
 
 }
-
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-
 
 @media(min-width: 768px){
      .copyright,
@@ -215,6 +212,7 @@ margin: 0 auto;
         .align{
 
             align-items: flex-start;
+            
         }
 
 
@@ -228,11 +226,14 @@ input[type="tel"]{
     align-items: center;
     width: 60%;
 }
+
+
 input[type="submit"]{
  width:60%;
  margin: 0 auto;
  text-align: center;
  margin-left: 20%;
+ margin-top: 20px;
  }
 
  input[type="radio"],
@@ -241,6 +242,13 @@ input[type="submit"]{
     margin: 10px 10px;
 
  }
+ 
+
+ #state{
+    display:block;
+    margin-left: 5%;
+}
+ 
 
  .col{
 display: flex;
@@ -255,8 +263,12 @@ margin-right: auto;
 }
 
 #comment{
-max-height: 30%;
+max-height: 40%;
+
+
 }
+
+
 
 
 }
