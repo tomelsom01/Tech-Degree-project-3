@@ -73,6 +73,11 @@ header p{
   background-color: #1fe96c;
   border-radius: 100%;
   margin-right: 5px;
+  transition: width 2s;
+}
+
+.number:hover{
+width: 35px;
 }
 
 input[type="text"],
@@ -124,7 +129,6 @@ label {
     font-size: 1.0em;
     padding-right: 20px;
     width: 25%;
-    
   }
 
 ::placeholder {
@@ -213,6 +217,10 @@ margin: 0 auto;
 
             align-items: flex-start;
             
+        }
+        label{
+            padding-top: 10px;
+            display: block;
         }
 
 
