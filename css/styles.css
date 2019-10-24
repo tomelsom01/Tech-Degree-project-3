@@ -39,6 +39,11 @@ header{
     border-right: 0;
     
 }
+legend{
+font-weight:bold;
+font-size: 1.4em;
+
+}
 .bottomline{
     height: 10px;
     margin: 20px auto;
@@ -219,8 +224,9 @@ margin: 0 auto;
             
         }
         label{
+            
             padding-top: 10px;
-            display: block;
+            flex-basis:150px;
         }
 
 
@@ -233,6 +239,7 @@ input[type="tel"]{
     max-width: 600px;
     align-items: center;
     width: 60%;
+    
 }
 
 
@@ -254,7 +261,7 @@ input[type="submit"]{
 
  #state{
     display:block;
-    margin-left: 5%;
+    margin-left: 40px;
 }
  
 
