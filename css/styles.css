@@ -56,9 +56,10 @@ font-size: 1.4em;
 h2
  {
 text-align: center;
-padding-top: 30px;
-width:85%;
+padding-top: 10%;
+width:100%;
 margin: 0 auto;
+font-size: 120%;
 
 }
 
@@ -66,9 +67,9 @@ margin: 0 auto;
 .center{
     text-align: center;
     margin: 0 auto;
-    padding: 10px 0 30px;
-    width: 85%;  
-    font-size: 80%; 
+    padding-bottom: 20px;
+    width: 100%;  
+    font-size: 100%; 
 }
 .number{
 
@@ -91,7 +92,6 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select[id="state"],
-textarea,
 select {
   background: rgba(255,255,255,0.1);
   border: none;
@@ -106,6 +106,21 @@ select {
   border-radius: 5%;
 }
 
+textarea{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 15px;
+    height: 100%;
+    padding: 10%;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 50px;
+    border-radius: 5%;
+}
+
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
@@ -113,6 +128,7 @@ select[id="state"]:focus,
 textarea:focus,
 select:focus{
 background-color: indianred;
+transition: background-color 1s;
 
 }
 /* Contact Information */
@@ -204,13 +220,13 @@ footer{
 
 
     .form{
-        max-width:60%;
+        max-width: 100%;
         margin: 0 auto;
         
 
     }
     .form-1{
-max-width: 60%;
+max-width: 100%;
 margin: 0 auto;
 
     }
@@ -250,10 +266,10 @@ input[type="tel"]{
 
 
 input[type="submit"]{
- width:60%;
+ width:100%;
  margin: 0 auto;
  text-align: center;
- margin-left: 20%;
+ /* margin-left: 20%; */
  margin-top: 20px;
  }
 
