@@ -19,6 +19,7 @@ body{
     margin: 0 auto;
     width: 100%;
     text-align: center;
+    font-size: 100%;
     
     
     
@@ -42,7 +43,7 @@ header{
 
 legend{
 font-weight:bold;
-font-size: 1.4em;
+font-size: 82%;
 
 }
 .bottomline{
@@ -53,13 +54,13 @@ font-size: 1.4em;
     border-right: 0;
 }
 
-h2
- {
+h2{
 text-align: center;
 padding-top: 10%;
 width:100%;
 margin: 0 auto;
-font-size: 120%;
+font-size: 90%;
+font-weight: bold;
 
 }
 
@@ -69,7 +70,7 @@ font-size: 120%;
     margin: 0 auto;
     padding-bottom: 20px;
     width: 100%;  
-    font-size: 100%; 
+    font-size: 60%; 
 }
 .number{
 
@@ -210,12 +211,22 @@ footer{
 
 }
 
+
 @media(min-width: 768px){
      .copyright,
     .codeheader{
         margin: 0 auto;
         width: 90%;
         text-align: center;
+    }
+    .codeheader{
+        font-size: 120%;
+    }
+    h2{
+        font-size: 120%;
+    }
+    .center{
+        font-size: 110%;
     }
 
 
@@ -229,6 +240,10 @@ footer{
 max-width: 100%;
 margin: 0 auto;
 
+    }
+    legend{
+        font-size: 1.4em;
+        padding-bottom: 5px;
     }
 
     .newsletter{
